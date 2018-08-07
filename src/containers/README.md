@@ -1,0 +1,1 @@
+Put into this folder only stateful components
