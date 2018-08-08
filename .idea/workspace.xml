@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
     </list>
@@ -28,43 +28,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="27" />
+          <entry key="css" value="30" />
           <entry key="eslintrc" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="76" />
+          <entry key="js" value="87" />
           <entry key="json" value="2" />
           <entry key="md" value="4" />
+          <entry key="rnc" value="1" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="27" />
+          <entry key="CSS" value="30" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="76" />
+          <entry key="JavaScript" value="87" />
           <entry key="Markdown" value="4" />
+          <entry key="RNG Compact" value="1" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="471" />
+          <entry key="css" value="473" />
           <entry key="html" value="11" />
-          <entry key="js" value="2992" />
+          <entry key="js" value="3425" />
           <entry key="json" value="3" />
           <entry key="md" value="173" />
-          <entry key="txt" value="172" />
+          <entry key="txt" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="471" />
+          <entry key="CSS" value="473" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="2992" />
+          <entry key="JavaScript" value="3425" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="172" />
+          <entry key="PLAIN_TEXT" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -77,12 +79,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
+        <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="327">
+              <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,11 +129,11 @@
         <option value="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/BurgerIngredient.js" />
         <option value="$PROJECT_DIR$/src/components/Burger/Burger.css" />
         <option value="$PROJECT_DIR$/src/components/Burger/Burger.js" />
-        <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css" />
         <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.css" />
-        <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
-        <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" />
         <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js" />
+        <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css" />
+        <option value="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" />
+        <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
       </list>
     </option>
   </component>
@@ -289,7 +291,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533663250589</updated>
       <workItem from="1533663252156" duration="3179000" />
-      <workItem from="1533709722536" duration="7034000" />
+      <workItem from="1533709722536" duration="8943000" />
     </task>
     <task id="LOCAL-00001" summary="add for eject possibility">
       <created>1533663446473</created>
@@ -368,11 +370,25 @@
       <option name="project" value="LOCAL" />
       <updated>1533718326963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="remove ingredient">
+      <created>1533719214321</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1533719214321</updated>
+    </task>
+    <task id="LOCAL-00013" summary="total Price">
+      <created>1533731132589</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533731132589</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10213000" />
+    <option name="totallyTimeSpent" value="12122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -420,7 +436,9 @@
     <MESSAGE value="flat array" />
     <MESSAGE value="build controls" />
     <MESSAGE value="add ingredient" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ingredient" />
+    <MESSAGE value="remove ingredient" />
+    <MESSAGE value="total Price" />
+    <option name="LAST_COMMIT_MESSAGE" value="total Price" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scripts/build.js">
@@ -567,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Burger/Burger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -584,32 +595,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="416">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/18-button-code.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1255">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="327">
+          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
