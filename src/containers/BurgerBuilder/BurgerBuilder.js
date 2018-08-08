@@ -1,6 +1,8 @@
-import React, {Component} from 'react'
-import Burger from './../../components/Burger/Burger'
-import BuildControls from './../../components/Burger/BuildControls/BuildControls'
+import React, {Component, Fragment} from 'react'
+import Burger from '../../components/Burger/Burger'
+import BuildControls from '../../components/Burger/BuildControls/BuildControls'
+import Modal from '../../components/UI/Modal/Modal'
+import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 
 const INGREDIENT_PRICES = {
   salad: 0.5,
@@ -54,9 +56,12 @@ class BurgerBuilder extends Component {
     for (let key in disabledInfo) {
       disabledInfo[key] = disabledInfo[key] <= 0
     }
-    
+
     return (
-      <React.Fragment>
+      <Fragment>
+        <Modal>
+          <OrderSummary ingredients={this.state.ingredients}/>
+        </Modal>
         <Burger ingredients={this.state.ingredients}/>
         <BuildControls
           price={this.state.totalPrice}
@@ -64,7 +69,7 @@ class BurgerBuilder extends Component {
           purchasable={this.state.purchasable}
           ingredientAdded={this.addIngredientHandler}
           ingredientRemoved={this.removeIngredientHandler}/>
-      </React.Fragment>
+      </Fragment>
     )
   }
 }
