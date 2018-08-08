@@ -1,1 +1,1 @@
-Put into this folder only stateful components
+## Put into this folder only stateful components
