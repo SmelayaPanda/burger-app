@@ -10,14 +10,19 @@ const withErrorHandler = (WrapperComponent, axios) => {
     }
 
     componentWillMount() {
-      axios.interceptors.request.use(req => {
+      this.reqInterceptor = axios.interceptors.request.use(req => {
         this.setState({error: null});
         return req
       })
       // You need always return req/res in interceptors to avoid block of HTTP
-      axios.interceptors.response.use(res => res, error => {
+      this.resInterceptor = axios.interceptors.response.use(res => res, error => {
         this.setState({error: error});
       })
+    }
+
+    componentWillUnmount() {
+      axios.interceptors.request.eject(this.reqInterceptor) // remove interceptors: to avoid memory leak if we have routing
+      axios.interceptors.response.eject(this.resInterceptor)
     }
 
     errorConfirmHandler = () => {
