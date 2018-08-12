@@ -4,28 +4,34 @@ import classes from './Input.css'
 
 const input = (props) => {
   let inputElement = null
+  let inputClasses = [classes.InputElement]
+  
+  if (props.invalid && props.shouldValidate) {
+    inputClasses.push(classes.Invalid)
+  }
+  
   switch (props.type) {
   case('input'):
     inputElement =
         <input
+          className={inputClasses.join(' ')}
           onChange={props.changed}
-          className={classes.InputElement}
           value={props.value}
           {...props.config} />
     break
   case('text-area'):
     inputElement =
         <textarea
+          className={inputClasses.join(' ')}
           onChange={props.changed}
-          className={classes.InputElement}
           value={props.value}
           {...props.config}/>
     break
   case ('select'):
     inputElement = (
       <select
+        className={inputClasses.join(' ')}
         onChange={props.changed}
-        className={classes.InputElement}
         value={props.value}>
         {props.config.options.map(el => {
           return (
@@ -40,8 +46,8 @@ const input = (props) => {
   default:
     inputElement =
         <input
+          className={inputClasses.join(' ')}
           onChange={props.changed}
-          className={classes.InputElement}
           value={props.value}
           {...props.config}/>
   }
@@ -57,10 +63,12 @@ input.propTypes = {
   type: PropTypes.string,
   config: PropTypes.object.isRequired,
   label: PropTypes.string,
-  value: PropTypes.arrayOf([
-    PropTypes.string,
-    PropTypes.number
-  ])
+  invalid: PropTypes.bool,
+  shouldValidate: PropTypes.bool
+  // value: PropTypes.oneOf([
+  //   PropTypes.string,
+  //   PropTypes.number
+  // ])
 }
 
 export default input;

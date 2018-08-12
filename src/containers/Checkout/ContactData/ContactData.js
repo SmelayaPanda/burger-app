@@ -122,8 +122,10 @@ class ContactData extends Component {
         {formElemetArray.map(el => (
           <Input
             key={el.id}
-            value={el.value}
+            value={el.data.value}
             changed={(event) => this.inputChangedHandler(event, el.id)}
+            shouldValidate={el.data.validation}
+            invalid={!el.data.valid}
             config={el.data.config}
             type={el.data.type}/>
         ))}
