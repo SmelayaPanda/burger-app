@@ -4,14 +4,46 @@ import axios from '../../../axios-orders'
 import Button from '../../../components/UI/Button/Button'
 import classes from './ContactData.css'
 import Spinner from '../../../components/UI/Spinner/Spinner'
+import Input from '../../../components/UI/Input/Input'
 
 class ContactData extends Component {
   state = {
-    name: '',
-    email: '',
-    address: {
-      street: '',
-      postCode: ''
+    orderForm: {
+      name: {
+        type: 'input',
+        config: {type: 'text', placeholder: 'Your Name'},
+        value: ''
+      },
+      street: {
+        type: 'input',
+        config: {type: 'text', placeholder: 'Street'},
+        value: ''
+      },
+      zipCode: {
+        type: 'input',
+        config: {type: 'text', placeholder: 'Zip Code'},
+        value: ''
+      },
+      country: {
+        type: 'input',
+        config: {type: 'text', placeholder: 'Country'},
+        value: ''
+      },
+      email: {
+        type: 'email',
+        config: {type: 'text', placeholder: 'Your E-Mail'},
+        value: ''
+      },
+      deliveryMethod: {
+        type: 'select',
+        config: {
+          options: [
+            {value: 'fastest', displayValue: 'Fastest'},
+            {value: 'cheapest', displayValue: 'Cheapest'}
+          ]
+        },
+        value: ''
+      }
     },
     loading: false
   }
@@ -24,16 +56,6 @@ class ContactData extends Component {
     const order = {
       ingredients: this.props.ingredients,
       price: this.props.price,
-      customer: {
-        name: 'Panda',
-        address: {
-          street: 'Somestreet',
-          zipCode: '630090',
-          country: 'Russia'
-        },
-        email: 'panda@mail.ru'
-      },
-      deliveryMethod: 'fastest',
       date: new Date().getTime()
     }
     // .json it's only firebase endpoint addition
@@ -50,11 +72,22 @@ class ContactData extends Component {
   }
 
   render() {
+    let formElemetArray = []
+    for (let key in this.state.orderForm) {
+      formElemetArray.push({
+        id: key,
+        data: this.state.orderForm[key]
+      })
+    }
+
     let form = <form action="">
-      <input type="text" name={'name'} placeholder={'Your name'} />
-      <input type="email" name={'email'} placeholder={'Your email'} />
-      <input type="text" name={'street'} placeholder={'Street'} />
-      <input type="text" name={'postalCode'} placeholder={'Postal Code'} />
+      {formElemetArray.map(el => (
+        <Input
+          key={el.id}
+          value={el.value}
+          config={el.data.config}
+          type={el.data.type}/>
+      ))}
       <Button btnType={'Success'} clicked={this.orderHandler}>ORDER</Button>
     </form>;
 
@@ -71,9 +104,10 @@ class ContactData extends Component {
   }
 }
 
-ContactData.propTypes = {
-  ingredients: PropTypes.object.isRequired,
-  price: PropTypes.number.isRequired
-}
+ContactData
+  .propTypes = {
+    ingredients: PropTypes.object.isRequired,
+    price: PropTypes.number.isRequired
+  }
 
 export default ContactData;
