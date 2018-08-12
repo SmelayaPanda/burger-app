@@ -72,32 +72,33 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
-    this.setState({loading: true});
-    const order = {
-      ingredients: this.state.ingredients,
-      price: this.state.totalPrice,
-      customer: {
-        name: 'Panda',
-        address: {
-          street: 'Somestreet',
-          zipCode: '630090',
-          country: 'Russia'
-        },
-        email: 'panda@mail.ru'
-      },
-      deliveryMethod: 'fastest',
-      date: new Date().getTime()
-    }
-    // .json it's only firebase endpoint addition
-    axios.post('/orders.json', order)
-      .then(response => {
-        this.setState({loading: false, purchasing: false});
-        console.log(response);
-      })
-      .catch(err => {
-        this.setState({loading: false, purchasing: false});
-        console.log(err)
-      })
+    this.props.history.push('/checkout')
+    // this.setState({loading: true});
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   price: this.state.totalPrice,
+    //   customer: {
+    //     name: 'Panda',
+    //     address: {
+    //       street: 'Somestreet',
+    //       zipCode: '630090',
+    //       country: 'Russia'
+    //     },
+    //     email: 'panda@mail.ru'
+    //   },
+    //   deliveryMethod: 'fastest',
+    //   date: new Date().getTime()
+    // }
+    // // .json it's only firebase endpoint addition
+    // axios.post('/orders.json', order)
+    //   .then(response => {
+    //     this.setState({loading: false, purchasing: false});
+    //     console.log(response);
+    //   })
+    //   .catch(err => {
+    //     this.setState({loading: false, purchasing: false});
+    //     console.log(err)
+    //   })
   }
 
   render() {
