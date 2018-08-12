@@ -76,37 +76,12 @@ class BurgerBuilder extends Component {
     for (let i in this.state.ingredients) {
       queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]))
     }
+    queryParams.push('price=' + this.state.totalPrice)
     this.props.history.push({
       pathname: '/checkout',
       search: '?' + queryParams.join('&')
       // state: {ingredients: this.state.ingredients}
     })
-    // this.setState({loading: true});
-    // const order = {
-    //   ingredients: this.state.ingredients,
-    //   price: this.state.totalPrice,
-    //   customer: {
-    //     name: 'Panda',
-    //     address: {
-    //       street: 'Somestreet',
-    //       zipCode: '630090',
-    //       country: 'Russia'
-    //     },
-    //     email: 'panda@mail.ru'
-    //   },
-    //   deliveryMethod: 'fastest',
-    //   date: new Date().getTime()
-    // }
-    // // .json it's only firebase endpoint addition
-    // axios.post('/orders.json', order)
-    //   .then(response => {
-    //     this.setState({loading: false, purchasing: false});
-    //     console.log(response);
-    //   })
-    //   .catch(err => {
-    //     this.setState({loading: false, purchasing: false});
-    //     console.log(err)
-    //   })
   }
 
   render() {
