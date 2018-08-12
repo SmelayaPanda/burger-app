@@ -49,13 +49,16 @@ class ContactData extends Component {
   }
 
   orderHandler = (event) => {
-    event.preventDefault() // prevent default behavior - prevent send request - default event of <form/> buttons
-    console.log(this.props.ingredients);
-
+    event.preventDefault() // prevent default behavior - prevent send request - default event of <form/>
     this.setState({loading: true});
+    const formData = {}
+    for (let key in this.state.orderForm) {
+      formData[key] = this.state.orderForm[key].value
+    }
     const order = {
       ingredients: this.props.ingredients,
       price: this.props.price,
+      orderData: formData,
       date: new Date().getTime()
     }
     // .json it's only firebase endpoint addition
@@ -88,17 +91,18 @@ class ContactData extends Component {
       })
     }
 
-    let form = <form action="">
-      {formElemetArray.map(el => (
-        <Input
-          key={el.id}
-          value={el.value}
-          changed={(event) => this.inputChangedHandler(event, el.id)}
-          config={el.data.config}
-          type={el.data.type}/>
-      ))}
-      <Button btnType={'Success'} clicked={this.orderHandler}>ORDER</Button>
-    </form>;
+    let form =
+      <form onSubmit={this.orderHandler}>
+        {formElemetArray.map(el => (
+          <Input
+            key={el.id}
+            value={el.value}
+            changed={(event) => this.inputChangedHandler(event, el.id)}
+            config={el.data.config}
+            type={el.data.type}/>
+        ))}
+        <Button btnType={'Success'}>ORDER</Button>
+      </form>;
 
     if (this.state.loading) {
       form = <Spinner/>
