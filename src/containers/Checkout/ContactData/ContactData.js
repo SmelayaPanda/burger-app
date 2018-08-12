@@ -14,35 +14,40 @@ class ContactData extends Component {
         config: {type: 'text', placeholder: 'Your Name'},
         value: '',
         validation: {required: true},
-        valid: false
+        valid: false,
+        touched: false
       },
       street: {
         type: 'input',
         config: {type: 'text', placeholder: 'Street'},
         value: '',
         validation: {required: true},
-        valid: false
+        valid: false,
+        touched: false
       },
       zipCode: {
         type: 'input',
         config: {type: 'text', placeholder: 'Zip Code'},
         value: '',
         validation: {required: true, minLength: 5, maxLength: 5},
-        valid: false
+        valid: false,
+        touched: false
       },
       country: {
         type: 'input',
         config: {type: 'text', placeholder: 'Country'},
         value: '',
         validation: {required: true},
-        valid: false
+        valid: false,
+        touched: false
       },
       email: {
         type: 'email',
         config: {type: 'text', placeholder: 'Your E-Mail'},
         value: '',
         validation: {required: true},
-        valid: false
+        valid: false,
+        touched: false
       },
       deliveryMethod: {
         type: 'select',
@@ -52,7 +57,8 @@ class ContactData extends Component {
             {value: 'cheapest', displayValue: 'Cheapest'}
           ]
         },
-        value: ''
+        value: '',
+        touched: false
       }
     },
     loading: false
@@ -102,6 +108,7 @@ class ContactData extends Component {
     const updatedOrderForm = {...this.state.orderForm}
     const updatedFormElement = {...updatedOrderForm[inputIdentifier]}
     updatedFormElement.value = event.target.value
+    updatedFormElement.touched = true
     updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation)
     // console.log(updatedFormElement)
     updatedOrderForm[inputIdentifier] = updatedFormElement
@@ -126,6 +133,7 @@ class ContactData extends Component {
             changed={(event) => this.inputChangedHandler(event, el.id)}
             shouldValidate={el.data.validation}
             invalid={!el.data.valid}
+            touched={el.data.touched}
             config={el.data.config}
             type={el.data.type}/>
         ))}

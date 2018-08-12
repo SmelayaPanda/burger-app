@@ -5,8 +5,8 @@ import classes from './Input.css'
 const input = (props) => {
   let inputElement = null
   let inputClasses = [classes.InputElement]
-  
-  if (props.invalid && props.shouldValidate) {
+
+  if (props.invalid && props.shouldValidate && props.touched) {
     inputClasses.push(classes.Invalid)
   }
   
@@ -64,7 +64,8 @@ input.propTypes = {
   config: PropTypes.object.isRequired,
   label: PropTypes.string,
   invalid: PropTypes.bool,
-  shouldValidate: PropTypes.bool
+  shouldValidate: PropTypes.any,
+  touched: PropTypes.bool,
   // value: PropTypes.oneOf([
   //   PropTypes.string,
   //   PropTypes.number
