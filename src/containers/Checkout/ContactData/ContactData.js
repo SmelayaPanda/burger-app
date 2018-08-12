@@ -8,6 +8,7 @@ import Input from '../../../components/UI/Input/Input'
 
 class ContactData extends Component {
   state = {
+    formIsValid: false,
     orderForm: {
       name: {
         type: 'input',
@@ -90,7 +91,7 @@ class ContactData extends Component {
       })
   }
 
-  checkValidity(value, rules) {
+  static checkValidity(value, rules) {
     let isValid = true
     if (rules.required) {
       isValid = value.trim() !== '' && isValid
@@ -106,13 +107,20 @@ class ContactData extends Component {
 
   inputChangedHandler = (event, inputIdentifier) => {
     const updatedOrderForm = {...this.state.orderForm}
-    const updatedFormElement = {...updatedOrderForm[inputIdentifier]}
-    updatedFormElement.value = event.target.value
-    updatedFormElement.touched = true
-    updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation)
-    // console.log(updatedFormElement)
-    updatedOrderForm[inputIdentifier] = updatedFormElement
-    this.setState({orderForm: updatedOrderForm});
+    const updatedFormEl = {...updatedOrderForm[inputIdentifier]}
+    updatedFormEl.value = event.target.value
+    updatedFormEl.touched = true
+    updatedFormEl.valid = ContactData.checkValidity(updatedFormEl.value, updatedFormEl.validation)
+    updatedOrderForm[inputIdentifier] = updatedFormEl
+
+    let formIsValid = true
+    for (let key in updatedOrderForm) {
+      if (typeof updatedOrderForm[key].valid !== 'undefined') {
+        formIsValid = updatedOrderForm[key].valid && formIsValid
+      }
+    }
+
+    this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
   }
 
   render() {
@@ -137,7 +145,7 @@ class ContactData extends Component {
             config={el.data.config}
             type={el.data.type}/>
         ))}
-        <Button btnType={'Success'}>ORDER</Button>
+        <Button btnType={'Success'} disabled={!this.state.formIsValid}>ORDER</Button>
       </form>;
 
     if (this.state.loading) {
@@ -153,10 +161,9 @@ class ContactData extends Component {
   }
 }
 
-ContactData
-  .propTypes = {
-    ingredients: PropTypes.object.isRequired,
-    price: PropTypes.number.isRequired
-  }
+ContactData.propTypes = {
+  ingredients: PropTypes.object.isRequired,
+  price: PropTypes.number.isRequired
+}
 
 export default ContactData;
