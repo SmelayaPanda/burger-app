@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 import axios from '../../../axios-orders'
 import Button from '../../../components/UI/Button/Button'
 import classes from './ContactData.css'
@@ -74,7 +74,7 @@ class ContactData extends Component {
     }
     const order = {
       ingredients: this.props.ingredients,
-      price: this.props.price,
+      price: this.props.totalPrice,
       orderData: formData,
       date: new Date().getTime()
     }
@@ -162,9 +162,9 @@ class ContactData extends Component {
   }
 }
 
-ContactData.propTypes = {
-  ingredients: PropTypes.object.isRequired,
-  price: PropTypes.number.isRequired
-}
+const mapStateToProps = state => ({
+  ingredients: state.ingredients,
+  totalPrice: state.totalPrice
+})
 
-export default ContactData;
+export default connect(mapStateToProps)(ContactData);

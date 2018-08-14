@@ -10,7 +10,7 @@ import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 import Spinner from '../../components/UI/Spinner/Spinner'
 
 class BurgerBuilder extends Component {
-  state = {
+  state = { // no needed in global redux management because this state belong to this component UI only
     purchasing: false,
     loading: false,
     error: null
@@ -41,16 +41,7 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
-    let queryParams = []
-    for (let i in this.props.ingredients) {
-      queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.props.ingredients[i]))
-    }
-    queryParams.push('price=' + this.props.totalPrice)
-    this.props.history.push({
-      pathname: '/checkout',
-      search: '?' + queryParams.join('&')
-      // state: {ingredients: this.state.ingredients}
-    })
+    this.props.history.push('/checkout')
   }
 
   render() {
