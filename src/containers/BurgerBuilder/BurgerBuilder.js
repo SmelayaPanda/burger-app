@@ -11,7 +11,6 @@ import Spinner from '../../components/UI/Spinner/Spinner'
 
 class BurgerBuilder extends Component {
   state = {
-    purchasable: false,
     purchasing: false,
     loading: false,
     error: null
@@ -30,7 +29,7 @@ class BurgerBuilder extends Component {
 
   updatePurchaseState = (ingredients) => {
     const sum = Object.values(ingredients).reduce((prev, next) => prev + next)
-    this.setState({purchasable: sum > 0})
+    return sum > 0
   }
 
   purchaseHandler = () => {
@@ -69,7 +68,7 @@ class BurgerBuilder extends Component {
             price={this.props.totalPrice}
             disabled={disabledInfo}
             ordered={this.purchaseHandler}
-            purchasable={this.state.purchasable}
+            purchasable={this.updatePurchaseState(this.props.ingredients)}
             ingredientAdded={this.props.onIngredientAdded}
             ingredientRemoved={this.props.onIngredientRemoved}/>
           {/* Argument igName will be passed bellow in BuildControls */}
