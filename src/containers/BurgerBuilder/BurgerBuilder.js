@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import * as actionTypes from '../../store/actions'
+import {addIngredient, removeIngredient} from '../../store/actions/index'
 import {connect} from 'react-redux'
 import axios from '../../axios-orders'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
@@ -87,13 +87,13 @@ class BurgerBuilder extends Component {
 }
 
 const mapStateToProps = state => ({
-  ingredients: state.ingredients,
-  totalPrice: state.totalPrice
+  ingredients: state.burgerBuilder.ingredients,
+  totalPrice: state.burgerBuilder.totalPrice
 })
 
 const mapDispatchToProps = dispatch => ({
-  onIngredientAdded: (igName) => dispatch({type: actionTypes.ADD_INGREDIENT, igName: igName}),
-  onIngredientRemoved: (igName) => dispatch({type: actionTypes.REMOVE_INGREDIENT, igName: igName})
+  onIngredientAdded: (igName) => dispatch(addIngredient(igName)),
+  onIngredientRemoved: (igName) => dispatch(removeIngredient((igName)))
 })
 
 export default connect(
