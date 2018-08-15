@@ -18,27 +18,17 @@ const burgerBuilderReducer = (state = initState, action) => {
   case actionTypes.ADD_INGREDIENT:
     return {
       ...state,
-      ingredients: {
-        ...state.ingredients,
-        [action.igName]: state.ingredients[action.igName] + 1
-      },
+      ingredients: {...state.ingredients, [action.igName]: state.ingredients[action.igName] + 1},
       totalPrice: state.totalPrice + INGREDIENT_PRICES[action.igName]
     }
   case actionTypes.REMOVE_INGREDIENT:
     return {
       ...state,
-      ingredients: {
-        ...state.ingredients,
-        [action.igName]: state.ingredients[action.igName] - 1
-      },
+      ingredients: {...state.ingredients, [action.igName]: state.ingredients[action.igName] - 1},
       totalPrice: state.totalPrice + INGREDIENT_PRICES[action.igName]
     }
   case actionTypes.SET_INGREDIENTS:
-    return {
-      ...state, ingredients:
-      action.ingredients, error: false,
-      totalPrice: initState.totalPrice
-    }
+    return {...state, ingredients: action.ingredients, error: false, totalPrice: initState.totalPrice}
   case actionTypes.FETCH_INGREDIENTS_FAILED:
     return {...state, error: true}
   default:

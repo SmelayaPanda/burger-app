@@ -13,25 +13,13 @@ export default function orderReducer(state = initState, action) {
   case actionTypes.PURCHASE_BURGER_START:
     return {...state, loading: true}
   case actionTypes.PURCHASE_BURGER_SUCCESS:
-    return {
-      ...state,
-      loading: false,
-      purchased: true,
-      orders: state.orders.concat(action.payload)
-    }
+    return {...state, loading: false, purchased: true, orders: state.orders.concat(action.payload)}
   case actionTypes.PURCHASE_BURGER_FAIL:
-    return {
-      ...state,
-      loading: false
-    }
+    return {...state, loading: false}
   case actionTypes.FETCH_ORDERS_START:
     return {...state, loading: true}
   case actionTypes.FETCH_ORDERS_SUCCESS:
-    return {
-      ...state,
-      orders: action.payload,
-      loading: false
-    }
+    return {...state, orders: action.payload, loading: false}
   case actionTypes.FETCH_ORDERS_FAIL:
     return {...state,  loading: false}
   default:
