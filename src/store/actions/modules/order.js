@@ -15,13 +15,16 @@ export const purchaseBurgerStart = () => ({
   type: actionTypes.PURCHASE_BURGER_START,
 })
 
+export const purchaseInit = () => ({
+  type: actionTypes.PURCHASE_INIT
+})
+
 export const purchaseBurger = (payload) => {
   return dispatch => {
     dispatch(purchaseBurgerStart())
     axios.post('/order.json', payload)
       .then(res => {
-        console.log(res.data);
-        dispatch(purchaseBurgerSuccess({...payload, id: res.data.key}))
+        dispatch(purchaseBurgerSuccess({...payload, id: res.data.name}))
       })
       .catch(err => {
         console.log(err);

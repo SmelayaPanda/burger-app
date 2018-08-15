@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {addIngredient, removeIngredient, initIngredients} from '../../store/actions/index'
+import {addIngredient, removeIngredient, initIngredients, purchaseInit} from '../../store/actions/index'
 import {connect} from 'react-redux'
 import axios from '../../axios-orders'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
@@ -18,7 +18,6 @@ class BurgerBuilder extends Component {
     this.props.onInitIngredients()
   }
 
-
   updatePurchaseState = (ingredients) => {
     const sum = Object.values(ingredients).reduce((prev, next) => prev + next)
     return sum > 0
@@ -33,6 +32,7 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
+    this.props.onInitPurchase()
     this.props.history.push('/checkout')
   }
 
@@ -84,7 +84,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   onIngredientAdded: (igName) => dispatch(addIngredient(igName)),
   onIngredientRemoved: (igName) => dispatch(removeIngredient((igName))),
-  onInitIngredients: () => dispatch(initIngredients())
+  onInitIngredients: () => dispatch(initIngredients()),
+  onInitPurchase: () => dispatch(purchaseInit())
 })
 
 export default connect(
