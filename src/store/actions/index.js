@@ -3,4 +3,8 @@ export {
   addIngredient,
   initIngredients
 } from './modules/burgerBuilder'
-export {} from './modules/order'
+
+export {
+  purchaseBurger,
+  purchaseBurgerStart
+} from './modules/order'

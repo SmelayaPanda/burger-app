@@ -9,11 +9,11 @@ export const removeIngredient = payload => ({
   type: actionTypes.REMOVE_INGREDIENT, igName: payload
 })
 
-export const setIngredients = payload => ({
+const setIngredients = payload => ({
   type: actionTypes.SET_INGREDIENTS, ingredients: payload
 })
 
-export const fetchIngredientFail = () => ({
+const fetchIngredientFail = () => ({
   type: actionTypes.FETCH_INGREDIENTS_FAILED
 })
 
