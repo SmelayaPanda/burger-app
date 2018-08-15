@@ -17,13 +17,6 @@ class BurgerBuilder extends Component {
   }
 
   componentDidMount() {
-    // axios.get('https://burger-app-e23f8.firebaseio.com/ingredients.json')
-    //   .then(res => {
-    //     this.setState({ingredients: res.data});
-    //   })
-    //   .catch(err => {
-    //     this.setState({error: true});
-    //   })
   }
 
 
@@ -71,9 +64,6 @@ class BurgerBuilder extends Component {
         purchaseContinue={this.purchaseContinueHandler}
         ingredients={this.props.ingredients}/>;
     }
-    if (this.state.loading) {
-      orderSummary = <Spinner/>
-    }
 
     return (
       <Fragment>
@@ -100,3 +90,4 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(withErrorHandler(BurgerBuilder, axios))
+// You can use axios for catch error event if you don't use it here (it excite error from redux)
