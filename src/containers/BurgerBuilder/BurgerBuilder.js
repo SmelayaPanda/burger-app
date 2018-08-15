@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {addIngredient, removeIngredient} from '../../store/actions/index'
+import {addIngredient, removeIngredient, initIngredients} from '../../store/actions/index'
 import {connect} from 'react-redux'
 import axios from '../../axios-orders'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
@@ -11,12 +11,11 @@ import Spinner from '../../components/UI/Spinner/Spinner'
 
 class BurgerBuilder extends Component {
   state = { // no needed in global redux management because this state belong to this component UI only
-    purchasing: false,
-    loading: false,
-    error: null
+    purchasing: false
   }
 
   componentDidMount() {
+    this.props.onInitIngredients()
   }
 
 
@@ -43,7 +42,7 @@ class BurgerBuilder extends Component {
       disabledInfo[key] = disabledInfo[key] <= 0
     }
     let orderSummary = null
-    let burger = this.state.error ? <p>Ingredients can't be loaded...</p> : <Spinner/>
+    let burger = this.props.error ? <p>Ingredients can't be loaded...</p> : <Spinner/>
     if (this.props.ingredients) {
       burger = (
         <Fragment>
@@ -78,12 +77,14 @@ class BurgerBuilder extends Component {
 
 const mapStateToProps = state => ({
   ingredients: state.burgerBuilder.ingredients,
-  totalPrice: state.burgerBuilder.totalPrice
+  totalPrice: state.burgerBuilder.totalPrice,
+  error: state.burgerBuilder.error
 })
 
 const mapDispatchToProps = dispatch => ({
   onIngredientAdded: (igName) => dispatch(addIngredient(igName)),
-  onIngredientRemoved: (igName) => dispatch(removeIngredient((igName)))
+  onIngredientRemoved: (igName) => dispatch(removeIngredient((igName))),
+  onInitIngredients: () => dispatch(initIngredients())
 })
 
 export default connect(
