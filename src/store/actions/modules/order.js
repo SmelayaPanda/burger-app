@@ -26,7 +26,6 @@ export const purchaseBurger = (payload) => (dispatch, getState) => {
       dispatch(purchaseBurgerSuccess({...payload, id: res.data.name}))
     })
     .catch(err => {
-      console.log(err);
       dispatch(purchaseBurgerFail(err))
     })
 }
@@ -49,7 +48,6 @@ const fetchOrderStart = () => ({
 
 export const fetchOrders = () => (dispatch, getState) => {
   dispatch(fetchOrderStart())
-  console.log(getState().auth.userId);
   const queryParams = `?auth=${getState().auth.token}&orderBy="userId"&equalTo="${getState().auth.userId}"`
   axios.get('/orders.json' + queryParams)
     .then(res => {

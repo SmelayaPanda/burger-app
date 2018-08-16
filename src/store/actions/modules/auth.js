@@ -43,11 +43,9 @@ export const auth = (email, password, isSignup) => {
       password: password,
       returnSecureToken: true
     }
-    console.log(authData);
 
     axios.post(`${URL}`, authData)
       .then(res => {
-        console.log(res);
         const expirationDate = new Date(new Date().getTime() + res.data.expiresIn * 1000).toString()
         localStorage.setItem('userId', res.data.localId)
         localStorage.setItem('token', res.data.idToken)
@@ -56,7 +54,6 @@ export const auth = (email, password, isSignup) => {
         dispatch(checkAuthTimeout(res.data.expiresIn))
       })
       .catch(err => {
-        console.log(err)
         dispatch(authFail(err.response.data.error))
       })
   }

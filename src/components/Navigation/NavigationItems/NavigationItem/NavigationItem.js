@@ -10,6 +10,7 @@ const navigationItem = (props) => (
     </NavLink>
   </li>
 )
+
 navigationItem.propTypes = {
   link: PropTypes.string.isRequired,
   exact: PropTypes.bool,
