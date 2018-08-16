@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationsItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationsItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +36,7 @@
           <entry key="css" value="140" />
           <entry key="eslintrc" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="798" />
+          <entry key="js" value="816" />
           <entry key="json" value="6" />
           <entry key="md" value="5" />
           <entry key="png" value="1" />
@@ -51,7 +51,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="798" />
+          <entry key="JavaScript" value="816" />
           <entry key="Markdown" value="5" />
           <entry key="RNG Compact" value="5" />
           <entry key="SVG" value="1" />
@@ -63,10 +63,10 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="20341" />
+          <entry key="js" value="21075" />
           <entry key="json" value="3" />
           <entry key="md" value="173" />
-          <entry key="txt" value="1016" />
+          <entry key="txt" value="1039" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,9 +74,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="20341" />
+          <entry key="JavaScript" value="21075" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1023" />
+          <entry key="PLAIN_TEXT" value="1046" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+            <state relative-caret-position="287">
+              <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -106,14 +106,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="README" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>alert(</find>
       <find>classe</find>
       <find>input</find>
       <find>inputType</find>
@@ -143,6 +142,7 @@
       <find>totalPrice</find>
       <find>order.js</find>
       <find>load</find>
+      <find>inputChangedHandler</find>
     </findStrings>
     <replaceStrings>
       <replace>this.props</replace>
@@ -166,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.css" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.css" />
         <option value="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.css" />
         <option value="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js" />
         <option value="$PROJECT_DIR$/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToogle.js" />
@@ -207,8 +205,6 @@
         <option value="$PROJECT_DIR$/src/components/Order/CheckoutSummary/CheckoutSummary.js" />
         <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
         <option value="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/store/actions/modules/order.js" />
         <option value="$PROJECT_DIR$/src/containers/Orders/Orders.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/modules/burgerBuilder.js" />
@@ -216,6 +212,10 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationsItems.js" />
         <option value="$PROJECT_DIR$/src/containers/Auth/Auth.css" />
+        <option value="$PROJECT_DIR$/src/store/actions/modules/Auth.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/containers/Auth/Auth.js" />
       </list>
     </option>
@@ -265,27 +265,6 @@
               <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="burger-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationItems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -299,16 +278,22 @@
               <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="burger-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="burger-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Checkout" type="462c0819:PsiDirectoryNode" />
-              <item name="ContactData" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="burger-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,21 +378,7 @@
       <workItem from="1534226450473" duration="5002000" />
       <workItem from="1534259745625" duration="4749000" />
       <workItem from="1534338211656" duration="13145000" />
-      <workItem from="1534392390195" duration="1216000" />
-    </task>
-    <task id="LOCAL-00018" summary="UI button">
-      <created>1533783127272</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1533783127273</updated>
-    </task>
-    <task id="LOCAL-00019" summary="total price">
-      <created>1533792294798</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1533792294798</updated>
+      <workItem from="1534392390195" duration="2713000" />
     </task>
     <task id="LOCAL-00020" summary="toolbar">
       <created>1533793165309</created>
@@ -738,11 +709,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534353658173</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="auth form">
+      <created>1534396806056</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1534396806056</updated>
+    </task>
+    <task id="LOCAL-00068" summary="input change">
+      <created>1534397366811</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1534397366811</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80878000" />
+    <option name="totallyTimeSpent" value="82375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -779,8 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="orders+" />
-    <MESSAGE value="toFixed" />
     <MESSAGE value="dynamic inputs" />
     <MESSAGE value="input change handler" />
     <MESSAGE value="submit form data" />
@@ -804,16 +787,11 @@
     <MESSAGE value="fix init totalPrice" />
     <MESSAGE value="fetch orders" />
     <MESSAGE value="one line" />
-    <option name="LAST_COMMIT_MESSAGE" value="one line" />
+    <MESSAGE value="auth form" />
+    <MESSAGE value="input change" />
+    <option name="LAST_COMMIT_MESSAGE" value="input change" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="506" column="16" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
@@ -973,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/burgerBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1050,20 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
@@ -1102,16 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="138" column="11" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="138" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1143,10 +1090,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1255">
+          <caret line="138" column="11" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="138" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/burgerBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+        <state relative-caret-position="287">
+          <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

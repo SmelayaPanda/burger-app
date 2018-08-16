@@ -10,3 +10,7 @@ export {
   purchaseInit,
   fetchOrders
 } from './modules/order'
+
+export {
+  auth
+} from './modules/auth'
