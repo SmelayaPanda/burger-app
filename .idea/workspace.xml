@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/modules/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/modules/order.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,7 +33,7 @@
           <entry key="css" value="140" />
           <entry key="eslintrc" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="845" />
+          <entry key="js" value="852" />
           <entry key="json" value="6" />
           <entry key="md" value="5" />
           <entry key="png" value="1" />
@@ -49,7 +48,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="845" />
+          <entry key="JavaScript" value="852" />
           <entry key="Markdown" value="5" />
           <entry key="RNG Compact" value="5" />
           <entry key="SVG" value="1" />
@@ -61,10 +60,10 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="22423" />
+          <entry key="js" value="22515" />
           <entry key="json" value="3" />
           <entry key="md" value="173" />
-          <entry key="txt" value="1105" />
+          <entry key="txt" value="1129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,9 +71,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="22423" />
+          <entry key="JavaScript" value="22515" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1112" />
+          <entry key="PLAIN_TEXT" value="1136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -87,10 +86,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/store/reducers/modules/auth.js">
+        <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="274">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/components/Order/CheckoutSummary/CheckoutSummary.js" />
         <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
         <option value="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/modules/order.js" />
         <option value="$PROJECT_DIR$/src/containers/Orders/Orders.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/modules/burgerBuilder.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/modules/order.js" />
@@ -209,10 +210,11 @@
         <option value="$PROJECT_DIR$/src/store/actions/modules/Auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/modules/auth.js" />
-        <option value="$PROJECT_DIR$/src/containers/Auth/Auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/modules/auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
+        <option value="$PROJECT_DIR$/src/containers/Auth/Auth.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/modules/order.js" />
       </list>
     </option>
   </component>
@@ -389,21 +391,7 @@
       <workItem from="1534226450473" duration="5002000" />
       <workItem from="1534259745625" duration="4749000" />
       <workItem from="1534338211656" duration="13145000" />
-      <workItem from="1534392390195" duration="6487000" />
-    </task>
-    <task id="LOCAL-00025" summary="drawer toggle+">
-      <created>1533833412271</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1533833412271</updated>
-    </task>
-    <task id="LOCAL-00026" summary="performance+">
-      <created>1533834607909</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1533834607909</updated>
+      <workItem from="1534392390195" duration="7498000" />
     </task>
     <task id="LOCAL-00027" summary="folder restructure">
       <created>1533835186115</created>
@@ -734,11 +722,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534404163135</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="logout">
+      <created>1534408477001</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1534408477001</updated>
+    </task>
+    <task id="LOCAL-00075" summary="order protection">
+      <created>1534409548322</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1534409548323</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86149000" />
+    <option name="totallyTimeSpent" value="87160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -775,8 +777,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="touched input" />
-    <MESSAGE value="disable ordering" />
     <MESSAGE value="no rules case" />
     <MESSAGE value="add redux" />
     <MESSAGE value="map ingredient state and dispatch" />
@@ -800,7 +800,9 @@
     <MESSAGE value="sign user in" />
     <MESSAGE value="reducer and pass token" />
     <MESSAGE value="error and loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="error and loading" />
+    <MESSAGE value="logout" />
+    <MESSAGE value="order protection" />
+    <option name="LAST_COMMIT_MESSAGE" value="order protection" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js">
@@ -1100,16 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducers/modules/burgerBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1127,37 +1119,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="427">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="342">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/modules/auth.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="-578">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

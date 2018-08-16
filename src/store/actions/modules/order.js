@@ -19,18 +19,16 @@ export const purchaseInit = () => ({
   type: actionTypes.PURCHASE_INIT
 })
 
-export const purchaseBurger = (payload) => {
-  return dispatch => {
-    dispatch(purchaseBurgerStart())
-    axios.post('/orders.json', payload)
-      .then(res => {
-        dispatch(purchaseBurgerSuccess({...payload, id: res.data.name}))
-      })
-      .catch(err => {
-        console.log(err);
-        dispatch(purchaseBurgerFail(err))
-      })
-  }
+export const purchaseBurger = (payload) => (dispatch, getState) => {
+  dispatch(purchaseBurgerStart())
+  axios.post('/orders.json?auth=' + getState().auth.token, payload)
+    .then(res => {
+      dispatch(purchaseBurgerSuccess({...payload, id: res.data.name}))
+    })
+    .catch(err => {
+      console.log(err);
+      dispatch(purchaseBurgerFail(err))
+    })
 }
 
 
