@@ -32,7 +32,7 @@ class ContactData extends Component {
         type: 'input',
         config: {type: 'text', placeholder: 'Zip Code'},
         value: '',
-        validation: {required: true, minLength: 5, maxLength: 5},
+        validation: {required: true, minLength: 6, maxLength: 6},
         valid: false,
         touched: false
       },
@@ -76,6 +76,7 @@ class ContactData extends Component {
       ingredients: this.props.ingredients,
       price: this.props.totalPrice,
       orderData: formData,
+      userId: this.props.userId,
       date: new Date().getTime()
     }
 
@@ -156,7 +157,8 @@ class ContactData extends Component {
 const mapStateToProps = state => ({
   ingredients: state.burgerBuilder.ingredients,
   totalPrice: state.burgerBuilder.totalPrice,
-  loading: state.order.loading
+  loading: state.order.loading,
+  userId: state.auth.userId
 })
 
 const mapDispatchToProps = dispatch => ({
