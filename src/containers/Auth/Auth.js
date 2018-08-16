@@ -109,7 +109,9 @@ class Auth extends Component {
   }
 }
 
-const mapStateToProps = state => ({})
+const mapStateToProps = state => ({
+  // loading: state.auth.
+})
 
 const mapDispatchToProps = dispatch => ({
   onAuth: (email, password, isSignup) => dispatch(auth(email, password, isSignup))
