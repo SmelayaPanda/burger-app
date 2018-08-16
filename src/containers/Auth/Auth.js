@@ -4,6 +4,7 @@ import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import classes from './Auth.css'
 import {auth} from '../../store/actions'
+import Spinner from '../../components/UI/Spinner/Spinner'
 
 class Auth extends Component {
   state = {
@@ -83,7 +84,7 @@ class Auth extends Component {
       formElemetArray.push({id: key, data: this.state.controls[key]})
     }
 
-    const form = formElemetArray.map(el => (
+    let form = formElemetArray.map(el => (
       <Input
         key={el.id}
         value={el.data.value}
@@ -95,8 +96,18 @@ class Auth extends Component {
         type={el.data.type}/>
     ))
 
+    if (this.props.loading) {
+      form = <Spinner/>
+    }
+
+    let errorMessage = null
+    if (this.props.error) {
+      errorMessage = <p>{this.props.error.message}</p>
+    }
+
     return (
       <div className={classes.Auth}>
+        {errorMessage}
         <form onSubmit={this.submitHandler}>
           {form}
           <Button btnType={'Success'}>Submit</Button>
@@ -110,11 +121,12 @@ class Auth extends Component {
 }
 
 const mapStateToProps = state => ({
-  // loading: state.auth.
+  loading: state.auth.loading,
+  error: state.auth.error
 })
 
 const mapDispatchToProps = dispatch => ({
   onAuth: (email, password, isSignup) => dispatch(auth(email, password, isSignup))
 })
 
-export default connect(null, mapDispatchToProps)(Auth);
+export default connect(mapStateToProps, mapDispatchToProps)(Auth);
