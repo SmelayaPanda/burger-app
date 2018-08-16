@@ -7,6 +7,7 @@ import Button from '../../../components/UI/Button/Button'
 import classes from './ContactData.css'
 import Spinner from '../../../components/UI/Spinner/Spinner'
 import Input from '../../../components/UI/Input/Input'
+import {checkValidity} from '../../../shared/utility'
 
 class ContactData extends Component {
   state = {
@@ -83,27 +84,12 @@ class ContactData extends Component {
     this.props.onOrderBurger(order)
   }
 
-  static checkValidity(value, rules) {
-    if (!rules) return true
-    let isValid = true
-    if (rules.required) {
-      isValid = value.trim() !== '' && isValid
-    }
-    if (rules.minLength) {
-      isValid = value.length >= rules.minLength && isValid
-    }
-    if (rules.maxLength) {
-      isValid = value.length <= rules.maxLength && isValid
-    }
-    return isValid
-  }
-
   inputChangedHandler = (event, inputIdentifier) => {
     const updatedOrderForm = {...this.state.orderForm}
     const updatedFormEl = {...updatedOrderForm[inputIdentifier]}
     updatedFormEl.value = event.target.value
     updatedFormEl.touched = true
-    updatedFormEl.valid = ContactData.checkValidity(updatedFormEl.value, updatedFormEl.validation)
+    updatedFormEl.valid = checkValidity(updatedFormEl.value, updatedFormEl.validation)
     updatedOrderForm[inputIdentifier] = updatedFormEl
 
     let formIsValid = true

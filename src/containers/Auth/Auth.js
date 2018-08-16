@@ -6,6 +6,7 @@ import Button from '../../components/UI/Button/Button'
 import classes from './Auth.css'
 import {auth, setAuthRedirectPath} from '../../store/actions'
 import Spinner from '../../components/UI/Spinner/Spinner'
+import {checkValidity} from '../../shared/utility'
 
 class Auth extends Component {
   state = {
@@ -36,34 +37,13 @@ class Auth extends Component {
     }
   }
 
-  static checkValidity(value, rules) {
-    if (!rules) return true
-    let isValid = true
-    if (rules.required) {
-      isValid = value.trim() !== '' && isValid
-    }
-    if (rules.minLength) {
-      isValid = value.length >= rules.minLength && isValid
-    }
-    if (rules.maxLength) {
-      isValid = value.length <= rules.maxLength && isValid
-    }
-    if (rules.isEmail) {
-      isValid = /\S+@\S+\.\S+/.test(value.trim()) && isValid
-    }
-    if (rules.number) {
-      isValid = !isNaN(parseFloat(value)) && isFinite(value) && isValid
-    }
-    return isValid
-  }
-
   inputChangedHandler = (event, elName) => {
     const updatedControls = {
       ...this.state.controls,
       [elName]: {
         ...this.state.controls[elName],
         value: event.target.value,
-        valid: Auth.checkValidity(event.target.value, this.state.controls[elName].validation),
+        valid: checkValidity(event.target.value, this.state.controls[elName].validation),
         touched: true
       }
     }
