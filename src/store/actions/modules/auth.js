@@ -16,18 +16,21 @@ const authFail = payload => ({
 })
 
 
-export const auth = (email, password) => {
+export const auth = (email, password, isSignup) => {
   return dispatch => {
     dispatch(authStart())
     const API_KEY = 'AIzaSyABXW7iliSGcp4vkrkVcruk_5ZRDM5IOSU'
-    const URL = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty'
+    const baseUrl = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty'
+    const method = isSignup ? 'signupNewUser' : 'verifyPassword';
+    const URL = `${baseUrl}/${method}?key=${API_KEY}`;
     const authData = {
       email: email,
       password: password,
       returnSecureToken: true
     }
     console.log(authData);
-    axios.post(`${URL}/signupNewUser?key=${API_KEY}`, authData)
+
+    axios.post(`${URL}`, authData)
       .then(res => {
         console.log(res);
         dispatch(authSuccess(res.data))

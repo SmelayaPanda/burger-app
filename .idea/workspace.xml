@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +34,7 @@
           <entry key="css" value="140" />
           <entry key="eslintrc" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="816" />
+          <entry key="js" value="823" />
           <entry key="json" value="6" />
           <entry key="md" value="5" />
           <entry key="png" value="1" />
@@ -51,7 +49,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="816" />
+          <entry key="JavaScript" value="823" />
           <entry key="Markdown" value="5" />
           <entry key="RNG Compact" value="5" />
           <entry key="SVG" value="1" />
@@ -63,10 +61,10 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="21075" />
+          <entry key="js" value="21607" />
           <entry key="json" value="3" />
           <entry key="md" value="173" />
-          <entry key="txt" value="1039" />
+          <entry key="txt" value="1062" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,9 +72,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="21075" />
+          <entry key="JavaScript" value="21607" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1046" />
+          <entry key="PLAIN_TEXT" value="1069" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
+            <state relative-caret-position="295">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -113,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classe</find>
-      <find>input</find>
       <find>inputType</find>
       <find>inputtype</find>
       <find>elType</find>
@@ -143,6 +139,8 @@
       <find>order.js</find>
       <find>load</find>
       <find>inputChangedHandler</find>
+      <find>onAuth</find>
+      <find>isSignUp</find>
     </findStrings>
     <replaceStrings>
       <replace>this.props</replace>
@@ -158,6 +156,7 @@
       <replace>inputClasses.join(' ')</replace>
       <replace>igName</replace>
       <replace>state</replace>
+      <replace>isSignup</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -214,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/containers/Auth/Auth.css" />
         <option value="$PROJECT_DIR$/src/store/actions/modules/Auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
         <option value="$PROJECT_DIR$/src/containers/Auth/Auth.js" />
       </list>
     </option>
@@ -304,7 +303,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.last.introduce.type" value="LET" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -378,21 +377,7 @@
       <workItem from="1534226450473" duration="5002000" />
       <workItem from="1534259745625" duration="4749000" />
       <workItem from="1534338211656" duration="13145000" />
-      <workItem from="1534392390195" duration="2713000" />
-    </task>
-    <task id="LOCAL-00020" summary="toolbar">
-      <created>1533793165309</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1533793165309</updated>
-    </task>
-    <task id="LOCAL-00021" summary="logo">
-      <created>1533793884774</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1533793884774</updated>
+      <workItem from="1534392390195" duration="4276000" />
     </task>
     <task id="LOCAL-00022" summary="nav items">
       <created>1533829151674</created>
@@ -723,11 +708,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534397366811</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="actions">
+      <created>1534398321281</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1534398321281</updated>
+    </task>
+    <task id="LOCAL-00070" summary="sign user up">
+      <created>1534401417427</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1534401417427</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82375000" />
+    <option name="totallyTimeSpent" value="83938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -764,8 +763,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dynamic inputs" />
-    <MESSAGE value="input change handler" />
     <MESSAGE value="submit form data" />
     <MESSAGE value="check validity" />
     <MESSAGE value="invalid in view" />
@@ -789,7 +786,9 @@
     <MESSAGE value="one line" />
     <MESSAGE value="auth form" />
     <MESSAGE value="input change" />
-    <option name="LAST_COMMIT_MESSAGE" value="input change" />
+    <MESSAGE value="actions" />
+    <MESSAGE value="sign user up" />
+    <option name="LAST_COMMIT_MESSAGE" value="sign user up" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.css">
@@ -1021,13 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Orders/Orders.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1124,17 +1116,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="88">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Auth/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
+        <state relative-caret-position="295">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
