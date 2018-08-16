@@ -1,5 +1,11 @@
 import React, {Component, Fragment} from 'react'
-import {addIngredient, removeIngredient, initIngredients, purchaseInit} from '../../store/actions/index'
+import {
+  addIngredient,
+  initIngredients,
+  purchaseInit,
+  removeIngredient,
+  setAuthRedirectPath
+} from '../../store/actions/index'
 import {connect} from 'react-redux'
 import axios from '../../axios-orders'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
@@ -27,6 +33,7 @@ class BurgerBuilder extends Component {
     if (this.props.isAuth) {
       this.setState({purchasing: true});
     } else {
+      this.props.onSetAuthRedirectPath('/checkout')
       this.props.history.push('/auth')
     }
   }
@@ -91,7 +98,8 @@ const mapDispatchToProps = dispatch => ({
   onIngredientAdded: (igName) => dispatch(addIngredient(igName)),
   onIngredientRemoved: (igName) => dispatch(removeIngredient((igName))),
   onInitIngredients: () => dispatch(initIngredients()),
-  onInitPurchase: () => dispatch(purchaseInit())
+  onInitPurchase: () => dispatch(purchaseInit()),
+  onSetAuthRedirectPath: (path) => dispatch(setAuthRedirectPath(path))
 })
 
 export default connect(

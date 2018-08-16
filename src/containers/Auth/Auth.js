@@ -4,7 +4,7 @@ import {Redirect} from 'react-router-dom'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import classes from './Auth.css'
-import {auth} from '../../store/actions'
+import {auth, setAuthRedirectPath} from '../../store/actions'
 import Spinner from '../../components/UI/Spinner/Spinner'
 
 class Auth extends Component {
@@ -28,6 +28,12 @@ class Auth extends Component {
       }
     },
     isSignup: false
+  }
+
+  componentDidMount() {
+    if (!this.props.buildingBurger && this.props.authRedirectPath !== '/') {
+      this.props.onSetAuthRedirectPath('/')
+    }
   }
 
   static checkValidity(value, rules) {
@@ -102,7 +108,7 @@ class Auth extends Component {
     }
 
     const errorMessage = this.props.error ? <p>{this.props.error.message}</p> : null
-    const authRedirect = this.props.isAuth ? <Redirect to={'/'}/> : null;
+    const authRedirect = this.props.isAuth ? <Redirect to={this.props.authRedirectPath}/> : null;
 
     return (
       <div className={classes.Auth}>
@@ -123,11 +129,14 @@ class Auth extends Component {
 const mapStateToProps = state => ({
   loading: state.auth.loading,
   error: state.auth.error,
-  isAuth: state.auth.token !== null
+  isAuth: state.auth.token !== null,
+  buildingBurger: state.burgerBuilder.building,
+  authRedirectPath: state.auth.authRedirectPath
 })
 
 const mapDispatchToProps = dispatch => ({
-  onAuth: (email, password, isSignup) => dispatch(auth(email, password, isSignup))
+  onAuth: (email, password, isSignup) => dispatch(auth(email, password, isSignup)),
+  onSetAuthRedirectPath: (path) => dispatch(setAuthRedirectPath(path))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Auth);
