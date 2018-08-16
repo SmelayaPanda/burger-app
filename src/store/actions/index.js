@@ -12,5 +12,6 @@ export {
 } from './modules/order'
 
 export {
-  auth
+  auth,
+  logout
 } from './modules/auth'
