@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="async component">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/burger-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/burger-app.iml" afterDir="false" />
+    <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationsItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +34,7 @@
           <entry key="eslintrc" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="956" />
+          <entry key="js" value="958" />
           <entry key="json" value="12" />
           <entry key="md" value="7" />
           <entry key="png" value="1" />
@@ -57,7 +49,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="13" />
-          <entry key="JavaScript" value="956" />
+          <entry key="JavaScript" value="958" />
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="5" />
@@ -70,10 +62,10 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="25703" />
+          <entry key="js" value="25785" />
           <entry key="json" value="39" />
           <entry key="md" value="173" />
-          <entry key="txt" value="1332" />
+          <entry key="txt" value="1365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -81,9 +73,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="39" />
-          <entry key="JavaScript" value="25703" />
+          <entry key="JavaScript" value="25785" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1339" />
+          <entry key="PLAIN_TEXT" value="1372" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -92,6 +84,22 @@
         </counts>
       </usages-collector>
     </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -207,8 +215,8 @@
         <option value="$PROJECT_DIR$/src/hoc/asyncComponent/asyncComponent.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/rules_examples.json" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" />
       </list>
     </option>
   </component>
@@ -351,6 +359,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js" />
+      <test-names>
+        <test-name value="&lt;NavigationsItems /&gt;" />
+        <test-name value="should render three &lt;NavigationsItems /&gt; if authenticated" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -364,10 +385,12 @@
     <list>
       <item itemvalue="npm.dev" />
       <item itemvalue="Jest.&lt;NavigationsItems /&gt;" />
+      <item itemvalue="Jest.&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.&lt;NavigationsItems /&gt;" />
+        <item itemvalue="Jest.&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -394,14 +417,7 @@
       <workItem from="1534259745625" duration="4749000" />
       <workItem from="1534338211656" duration="13145000" />
       <workItem from="1534392390195" duration="18300000" />
-      <workItem from="1534483978104" duration="2097000" />
-    </task>
-    <task id="LOCAL-00040" summary="orders">
-      <created>1534067852860</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1534067852860</updated>
+      <workItem from="1534483978104" duration="2532000" />
     </task>
     <task id="LOCAL-00041" summary="navigation links">
       <created>1534068471434</created>
@@ -739,14 +755,42 @@
       <option name="project" value="LOCAL" />
       <updated>1534433771740</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="anzyme + test nav items">
+      <created>1534488741956</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1534488741958</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="_NavigationsItems___ - 2018.08.17 at 13h 48m 03s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_NavigationsItems___ - 2018.08.17 at 13h 48m 09s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_NavigationsItems___ - 2018.08.17 at 13h 48m 21s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_NavigationsItems____should_render_three__NavigationsItems____if_authenticated - 2018.08.17 at 13h 53m 17s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_NavigationsItems____should_render_three__NavigationsItems____if_authenticated - 2018.08.17 at 13h 53m 27s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_NavigationsItems____should_render_three__NavigationsItems____if_authenticated - 2018.08.17 at 13h 58m 10s.xml">
+      <configuration name="&lt;NavigationsItems /&gt;.should render three &lt;NavigationsItems /&gt; if authenticated" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100059000" />
+    <option name="totallyTimeSpent" value="100494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -754,7 +798,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2086247" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3764569" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -763,7 +807,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34498835" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34498835" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32983682" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -780,7 +824,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="purchase init" />
     <MESSAGE value="fix init totalPrice" />
     <MESSAGE value="fetch orders" />
     <MESSAGE value="one line" />
@@ -805,7 +848,8 @@
     <MESSAGE value="dev only for redux dev tools" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="async component" />
-    <option name="LAST_COMMIT_MESSAGE" value="async component" />
+    <MESSAGE value="anzyme + test nav items" />
+    <option name="LAST_COMMIT_MESSAGE" value="anzyme + test nav items" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/UI/Input/Input.js">
@@ -1140,16 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-272">
@@ -1162,7 +1196,17 @@
         <state relative-caret-position="234">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
