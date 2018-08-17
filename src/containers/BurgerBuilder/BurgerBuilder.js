@@ -15,7 +15,7 @@ import Modal from '../../components/UI/Modal/Modal'
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 import Spinner from '../../components/UI/Spinner/Spinner'
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
   state = { // no needed in global redux management because this state belong to this component UI only
     purchasing: false
   }

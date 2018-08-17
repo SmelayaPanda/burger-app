@@ -31,7 +31,7 @@ const buildControls = props => (
 )
 
 buildControls.propTypes = {
-  isAuth: PropTypes.bool.isRequired
+  isAuth: PropTypes.bool
 }
 
 export default buildControls
