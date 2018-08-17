@@ -32,7 +32,7 @@ const order = (props) => {
 
 order.propTypes = {
   price: PropTypes.number.isRequired,
-  ingredients: PropTypes.object.isRequired
+  ingredients: PropTypes.object
 }
 
 export default order;

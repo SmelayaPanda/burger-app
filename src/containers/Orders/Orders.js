@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
+import PropTypes from 'prop-types'
 import {fetchOrders} from '../../store/actions'
 import axios from '../../axios-orders'
 import Order from '../../components/Order/Order'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
 import Spinner from '../../components/UI/Spinner/Spinner'
 
-class Orders extends Component {
+export class Orders extends Component {
   componentDidMount() {
     this.props.onOrdersFetch()
   }
@@ -23,6 +24,15 @@ class Orders extends Component {
     }
     return orders
   }
+}
+
+Orders.propTypes = {
+  ingredients: PropTypes.object.isRequired,
+  price: PropTypes.arrayOf([
+    PropTypes.number.isRequired,
+    PropTypes.string.isRequired
+  ]),
+  orders: PropTypes.array.isRequired
 }
 
 const mapStateToProps = state => ({
