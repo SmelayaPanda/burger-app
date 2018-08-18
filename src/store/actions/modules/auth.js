@@ -20,6 +20,10 @@ export const logout = () => ({
   type: actionTypes.AUTH_INITIATE_LOGOUT
 })
 
+export const logoutSucceed = () => ({
+  type: actionTypes.AUTH_LOGOUT
+})
+
 const checkAuthTimeout = (expirationTime) => dispatch => {
   setTimeout(() => {
     dispatch(logout())
