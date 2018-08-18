@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +37,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="4" />
           <entry key="ico" value="1" />
-          <entry key="js" value="1193" />
+          <entry key="js" value="1207" />
           <entry key="json" value="40" />
           <entry key="log" value="1" />
           <entry key="md" value="10" />
@@ -57,7 +57,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="42" />
-          <entry key="JavaScript" value="1193" />
+          <entry key="JavaScript" value="1207" />
           <entry key="Log" value="1" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="8" />
@@ -71,11 +71,11 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="27967" />
+          <entry key="js" value="28105" />
           <entry key="json" value="624" />
           <entry key="md" value="173" />
           <entry key="sh" value="373" />
-          <entry key="txt" value="1443" />
+          <entry key="txt" value="1463" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -84,9 +84,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="624" />
-          <entry key="JavaScript" value="27967" />
+          <entry key="JavaScript" value="28105" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1450" />
+          <entry key="PLAIN_TEXT" value="1470" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -99,12 +99,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/store/sagas/auth.js">
+        <entry file="file://$PROJECT_DIR$/src/store/sagas/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            <state relative-caret-position="234">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,12 +226,12 @@
         <option value="$PROJECT_DIR$/component.sh" />
         <option value="$PROJECT_DIR$/comp.sh" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/store/sagas/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/store/sagas/auth.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
-        <option value="$PROJECT_DIR$/src/store/sagas/auth.js" />
+        <option value="$PROJECT_DIR$/src/store/sagas/index.js" />
       </list>
     </option>
   </component>
@@ -444,14 +444,7 @@
       <workItem from="1534573210536" duration="327000" />
       <workItem from="1534573682228" duration="1154000" />
       <workItem from="1534576148835" duration="7126000" />
-      <workItem from="1534616030331" duration="1694000" />
-    </task>
-    <task id="LOCAL-00047" summary="check validity">
-      <created>1534086548155</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1534086548155</updated>
+      <workItem from="1534616030331" duration="2181000" />
     </task>
     <task id="LOCAL-00048" summary="invalid in view">
       <created>1534087642082</created>
@@ -789,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534617715402</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="improve generator">
+      <created>1534618294036</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1534618294036</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -825,7 +825,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120501000" />
+    <option name="totallyTimeSpent" value="120988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -863,7 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sign user up" />
     <MESSAGE value="sign user in" />
     <MESSAGE value="reducer and pass token" />
     <MESSAGE value="error and loading" />
@@ -888,7 +887,8 @@
     <MESSAGE value="test reducer" />
     <MESSAGE value="orders test" />
     <MESSAGE value="add redux-saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redux-saga" />
+    <MESSAGE value="improve generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve generator" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.test.js" />
@@ -1049,23 +1049,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comp.sh" />
-    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/sagas/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1077,10 +1060,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/sagas/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="315">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -1094,12 +1094,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/sagas/auth.js">
+    <entry file="file://$PROJECT_DIR$/src/store/sagas/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
