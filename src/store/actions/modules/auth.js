@@ -16,14 +16,9 @@ const authFail = error => ({
   error: error
 })
 
-export const logout = () => {
-  localStorage.removeItem('token')
-  localStorage.removeItem('expirationDate')
-  localStorage.removeItem('userId')
-  return ({
-    type: actionTypes.AUTH_LOGOUT
-  });
-}
+export const logout = () => ({
+  type: actionTypes.AUTH_INITIATE_LOGOUT
+})
 
 const checkAuthTimeout = (expirationTime) => dispatch => {
   setTimeout(() => {
