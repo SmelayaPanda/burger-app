@@ -1,17 +1,16 @@
-import axios from 'axios'
 import * as actionTypes from '../actionTypes'
 
-const authStart = () => ({
+export const authStart = () => ({
   type: actionTypes.AUTH_START
 })
 
-const authSuccess = (token, userId) => ({
+export const authSuccess = (token, userId) => ({
   type: actionTypes.AUTH_SUCCESS,
   token: token,
   userId: userId
 })
 
-const authFail = error => ({
+export const authFail = error => ({
   type: actionTypes.AUTH_FAIL,
   error: error
 })
@@ -24,38 +23,18 @@ export const logoutSucceed = () => ({
   type: actionTypes.AUTH_LOGOUT
 })
 
-const checkAuthTimeout = (expirationTime) => ({
+export const checkAuthTimeout = (expirationTime) => ({
   type: actionTypes.AUTH_CHECK_TIMEOUT,
   expirationTime: expirationTime
 })
 
-export const auth = (email, password, isSignup) => {
-  return dispatch => {
-    dispatch(authStart())
-    const API_KEY = 'AIzaSyABXW7iliSGcp4vkrkVcruk_5ZRDM5IOSU'
-    const baseUrl = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty'
-    const method = isSignup ? 'signupNewUser' : 'verifyPassword';
-    const URL = `${baseUrl}/${method}?key=${API_KEY}`;
-    const authData = {
-      email: email,
-      password: password,
-      returnSecureToken: true
-    }
+export const auth = (email, password, isSignup) => ({
+  type: actionTypes.AUTH_USER,
+  email: email,
+  password: password,
+  isSignup: isSignup
+})
 
-    axios.post(`${URL}`, authData)
-      .then(res => {
-        const expirationDate = new Date(new Date().getTime() + res.data.expiresIn * 1000).toString()
-        localStorage.setItem('userId', res.data.localId)
-        localStorage.setItem('token', res.data.idToken)
-        localStorage.setItem('expirationDate', expirationDate)
-        dispatch(authSuccess(res.data.idToken, res.data.localId))
-        dispatch(checkAuthTimeout(res.data.expiresIn))
-      })
-      .catch(err => {
-        dispatch(authFail(err.response.data.error))
-      })
-  }
-}
 
 export const setAuthRedirectPath = path => ({
   type: actionTypes.SET_AUTH_REDIRECT_PATH,
