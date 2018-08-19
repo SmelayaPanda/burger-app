@@ -1,12 +1,16 @@
 import {delay} from 'redux-saga'
-import {put} from 'redux-saga/effects'
+import {put, call} from 'redux-saga/effects'
 import * as actions from '../actions'
 import axios from "axios";
 
 export function* logoutSaga() {
-  yield localStorage.removeItem('token')
-  yield localStorage.removeItem('expirationDate')
-  yield localStorage.removeItem('userId')
+  // local storage === sync code (technically yield redundant here)
+  yield call([localStorage, 'removeItem'], 'token') // make yor generator testable
+  yield call([localStorage, 'removeItem'], 'expirationDate')
+  yield call([localStorage, 'removeItem'], 'userId')
+  // yield localStorage.removeItem('token')
+  // yield localStorage.removeItem('expirationDate')
+  // yield localStorage.removeItem('userId')
   yield put(actions.logoutSucceed())
 }
 

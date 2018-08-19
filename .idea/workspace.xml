@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7847d17c-336c-4322-8a57-5548cf712df5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/modules/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/index.js" afterDir="false" />
     </list>
@@ -40,7 +37,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="4" />
           <entry key="ico" value="1" />
-          <entry key="js" value="1234" />
+          <entry key="js" value="1254" />
           <entry key="json" value="40" />
           <entry key="log" value="1" />
           <entry key="md" value="10" />
@@ -60,7 +57,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="42" />
-          <entry key="JavaScript" value="1234" />
+          <entry key="JavaScript" value="1254" />
           <entry key="Log" value="1" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="8" />
@@ -74,11 +71,11 @@
           <entry key="css" value="2024" />
           <entry key="dummy" value="7" />
           <entry key="html" value="11" />
-          <entry key="js" value="28398" />
+          <entry key="js" value="28742" />
           <entry key="json" value="624" />
           <entry key="md" value="173" />
           <entry key="sh" value="373" />
-          <entry key="txt" value="1480" />
+          <entry key="txt" value="1519" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -87,9 +84,9 @@
           <entry key="CSS" value="2024" />
           <entry key="HTML" value="11" />
           <entry key="JSON" value="624" />
-          <entry key="JavaScript" value="28398" />
+          <entry key="JavaScript" value="28742" />
           <entry key="Markdown" value="173" />
-          <entry key="PLAIN_TEXT" value="1487" />
+          <entry key="PLAIN_TEXT" value="1526" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -104,10 +101,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/store/sagas/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="286">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,9 +228,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
-        <option value="$PROJECT_DIR$/src/store/sagas/auth.js" />
         <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/store/actions/modules/auth.js" />
+        <option value="$PROJECT_DIR$/src/store/sagas/auth.js" />
         <option value="$PROJECT_DIR$/src/store/sagas/index.js" />
       </list>
     </option>
@@ -297,6 +294,13 @@
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="actions" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="burger-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="burger-app" type="b2602c69:ProjectViewProjectNode" />
@@ -448,21 +452,7 @@
       <workItem from="1534573682228" duration="1154000" />
       <workItem from="1534576148835" duration="7126000" />
       <workItem from="1534616030331" duration="2485000" />
-      <workItem from="1534657925763" duration="1182000" />
-    </task>
-    <task id="LOCAL-00049" summary="touched input">
-      <created>1534088232213</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1534088232213</updated>
-    </task>
-    <task id="LOCAL-00050" summary="disable ordering">
-      <created>1534089603872</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1534089603873</updated>
+      <workItem from="1534657925763" duration="2552000" />
     </task>
     <task id="LOCAL-00051" summary="no rules case">
       <created>1534089901083</created>
@@ -793,7 +783,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534618878066</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="auth user saga">
+      <created>1534661713782</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1534661713783</updated>
+    </task>
+    <task id="LOCAL-00099" summary="check init state saga">
+      <created>1534662078525</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1534662078525</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -829,13 +833,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122474000" />
+    <option name="totallyTimeSpent" value="123844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32163325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -867,8 +871,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reducer and pass token" />
-    <MESSAGE value="error and loading" />
     <MESSAGE value="order protection" />
     <MESSAGE value="purchase protection" />
     <MESSAGE value="isAuth in navigation" />
@@ -892,10 +894,11 @@
     <MESSAGE value="add redux-saga" />
     <MESSAGE value="improve generator" />
     <MESSAGE value="set timeout saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="set timeout saga" />
+    <MESSAGE value="auth user saga" />
+    <MESSAGE value="check init state saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="check init state saga" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
     <entry file="file://$PROJECT_DIR$/src/store/reducers/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1060,46 +1063,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/burgerBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/sagas/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="229">
+          <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/modules/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/sagas/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="286">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
